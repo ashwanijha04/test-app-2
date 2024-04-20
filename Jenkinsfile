@@ -32,6 +32,7 @@ pipeline {
                 // You can add deployment steps here, such as deploying to a web server or a cloud service.
                 // Example: deploying to AWS S3
                 // sh 'aws s3 cp ./build s3://your-s3-bucket-name --recursive --acl public-read'
+                sh 'echo hello-world'
             }
         }
     }
