@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /test-app-2/
+hooks:
+  ApplicationStop:
+    - location: stop.sh
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: before_install.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: after_install.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: start.sh
+      timeout: 300
+      runas: root
