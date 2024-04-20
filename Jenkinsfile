@@ -2,13 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the source code from your Git repository
-                git 'https://github.com/ashwanijha04/test-app-2'
-            }
-        }
-        
         stage('Install Dependencies') {
             steps {
                 // Install Node.js and npm
