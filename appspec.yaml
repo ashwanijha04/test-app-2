@@ -4,18 +4,6 @@ files:
   - source: /
     destination: /test-app-2/
 hooks:
-  ApplicationStop:
-    - location: scripts/stop.sh
-      timeout: 300
-      runas: root
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: scripts/after_install.sh
-      timeout: 300
-      runas: root
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 300
