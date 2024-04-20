@@ -5,6 +5,6 @@ files:
     destination: /test-app-2/
 hooks:
   ApplicationStart:
-    - location: scripts/start.sh
+    - location: src/scripts/start.sh
       timeout: 300
       runas: root
